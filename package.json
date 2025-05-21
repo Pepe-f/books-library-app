@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Books library app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "live-server",
-    "build": "rollup"
+    "build": "rollup -c",
+    "build:watch": "rollup -c --w"
   },
   "keywords": [
     "books"
@@ -14,9 +16,11 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.27.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "eslint": "^9.27.0",
     "globals": "^16.1.0",
     "live-server": "^1.2.2",
-    "rollup": "^4.41.0"
+    "rollup": "^4.41.0",
+    "rollup-plugin-import-css": "^3.5.8"
   }
 }
